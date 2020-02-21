@@ -1,0 +1,44 @@
+.pack body{
+    padding: 0px;
+    margin: 0px;
+}
+.pack{
+    position: absolute;
+    display: flex;
+    height: 12vh;
+    width: 175vw;
+    justify-content: center;
+    align-items: center;
+}
+.pack input[type="checkbox"]{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance:none;
+    outline: none;
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.4);
+    background-color: rgb(177, 173, 173);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pack Input:checked[type="checkbox"]
+{
+  background: #39ff14;
+}
+.pack input[type="checkbox"]::before{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    border-radius: 28px;
+    background: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow:0 3px 8px rgba(0,0,0,0.4);
+}
+.pack Input:checked[type="checkbox"]::before{
+    left: 40px;
+}
