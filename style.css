@@ -97,7 +97,7 @@
     position: absolute;
     display: flex;
     height: 12vh;
-    width: 175vw;
+    left: 1200px;
     justify-content: center;
     align-items: center;
 }
